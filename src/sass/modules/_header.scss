@@ -1,0 +1,30 @@
+.header {
+  margin-bottom: 2rem;
+
+  &__logo {
+    font-size: calc(1rem + 0.4vw);
+    white-space: nowrap;
+  }
+  & small {
+    font-size: default;
+  }
+}
+
+.content-wrapper {
+  padding: 0 1rem;
+  max-width: 100%;
+  display: flex;
+  flex-flow: column wrap;
+
+  @include tab-port {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  @include desktop {
+    max-width: 1236px;
+    margin: 0 auto;
+    overflow: hidden;
+  }
+}

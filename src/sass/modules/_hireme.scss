@@ -1,0 +1,58 @@
+.form {
+  // border: 1px dotted $linkedinColor;
+  padding: 1.5rem;
+  background-color: $mainWhite;
+  width: 100%;
+  box-shadow: 0 0 24px 0 rgba(0, 0, 0, 0.12);
+
+  &__row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -5px;
+    margin-left: -5px;
+
+    & > [class*="col"] {
+      padding-left: 5px;
+      padding-right: 5px;
+    }
+  }
+
+  &__group {
+    margin-bottom: 0.8rem;
+    padding-bottom: 0.2rem;
+  }
+
+  &__control {
+    display: block;
+    width: 100%;
+    padding: 0.4rem 0.6rem;
+    font-weight: 400;
+    line-height: 1.5;
+    border-radius: 5px;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    outline: none;
+    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out,
+      -webkit-box-shadow 0.15s ease-in-;
+
+    &:focus {
+      background-color: #fff;
+      border-color: #0366d6;
+      -webkit-box-shadow: 0 0 0 2px rgba(3, 102, 214, 0.3);
+      box-shadow: 0 0 0 2px rgba(3, 102, 214, 0.3);
+      outline: none;
+    }
+  }
+
+  &__textarea {
+    min-height: 10rem;
+    height: auto;
+    overflow: auto;
+    resize: vertical;
+
+    @include tab-land {
+      min-height: 13rem;
+    }
+  }
+}

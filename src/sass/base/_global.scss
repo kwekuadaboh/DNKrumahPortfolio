@@ -1,0 +1,183 @@
+///home/kae/Desktop/A_Z/Sites/Kwesi
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: calc(15px + 0.25vw);
+  scroll-behavior: smooth;
+}
+
+body,
+html {
+  height: 100%;
+  background: $mainWhite;
+}
+
+.bg-container {
+  //sticky footer on very big height screens
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+}
+
+body {
+  font-size: 1rem;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica,
+    Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  line-height: 1.5;
+  font-weight: 300;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+img {
+  vertical-align: middle;
+  border-style: none;
+}
+
+.img__fluid {
+  max-width: 100%;
+  // height: auto;
+}
+
+input,
+button {
+  overflow: visible;
+}
+
+input,
+textarea,
+button {
+  margin: 0;
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+}
+
+label {
+  display: inline-block;
+  margin-bottom: 0.5rem;
+}
+
+h1,
+h2,
+h3 {
+  font-weight: 400;
+}
+
+//icons
+.icon {
+  width: 1.35rem;
+  height: 1.35rem;
+  fill: #fff;
+  transition: all 0.15s ease-in;
+
+  &--download {
+    fill: currentColor;
+    margin-right: 0.5rem;
+    margin-bottom: -0.45rem;
+    width: 1.8rem;
+    height: 1.8rem;
+  }
+}
+
+//buttons
+.btn {
+  display: inline-block;
+  text-align: center;
+  border: 1px solid transparent;
+  border-radius: 4px;
+  background-color: transparent;
+
+  vertical-align: middle;
+  padding: 0.5rem 0.9rem;
+  user-select: none;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
+    border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  letter-spacing: 1px;
+  overflow: visible;
+  margin: 0.5rem 0;
+
+  &-cv {
+    display: inline-flex;
+    align-items: center;
+    font-weight: 600;
+
+    color: $darkerBlue;
+    border-color: $dogerBlue;
+    &:hover {
+      color: $mainWhite;
+      background-color: $dogerBlue;
+    }
+
+    &:focus {
+      outline: 0;
+      box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.5);
+      box-shadow: 0px 0px 0px 0.2rem rgba($dogerBlue, 0.3);
+    }
+    &:active {
+      color: $mainWhite;
+      background-color: $dogerBlue;
+      border-color: $dogerBlue;
+    }
+  }
+
+  &-submit {
+    background-color: $pureCyan;
+    cursor: pointer;
+    font-weight: 400;
+
+    &:focus {
+      outline: none;
+      box-shadow: 0px 0px 0px 0.2rem rgba($dogerBlue, 0.3);
+    }
+    &:active {
+      border-color: $dogerBlue;
+    }
+  }
+}
+
+.section__intro {
+  &--h2 {
+    margin-bottom: 0.8rem;
+    color: $pureCyan;
+    // font-size: 2rem;
+    margin-bottom: 1.2rem;
+    position: relative;
+    width: max-content;
+
+    &::after {
+      content: "";
+      display: block;
+      height: 2px;
+      width: 80%;
+      background-color: $pureCyan;
+      position: absolute;
+      left: 0;
+      bottom: 1px;
+    }
+  }
+
+  &--text {
+    .mailto {
+      font-weight: bold;
+      transition: all 0.25s ease-out;
+      padding: 0.2rem 0;
+
+      &:hover {
+        text-decoration: underline;
+        text-decoration-color: $pureCyan;
+      }
+    }
+  }
+}

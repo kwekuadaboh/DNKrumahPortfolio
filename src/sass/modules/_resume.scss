@@ -1,0 +1,55 @@
+//HERO RESUME
+.resume {
+  &__h3 {
+    letter-spacing: 1px;
+    color: $pureCyan;
+    text-transform: uppercase;
+    margin: 1rem 0;
+  }
+
+  &__item--date {
+    // color: red;
+    display: inline-block;
+    background-color: $ligthgray1;
+    padding: 0.1rem 0.3rem;
+    font-family: "Courier New", Courier, monospace;
+    font-style: italic;
+  }
+
+  &__item {
+    position: relative;
+    padding: 0 0 1.2rem 1.2rem;
+    border-left: 2px solid $ligthgray1;
+    margin-top: -2px;
+
+    &:last-of-type {
+      padding-bottom: 0;
+    }
+    &::before {
+      content: "";
+      position: absolute;
+      width: 15px;
+      height: 15px;
+      display: block;
+      border-radius: 50%;
+      background-color: $mainWhite;
+      border: 2px solid $mainBlack;
+      top: 0px;
+      left: -9px;
+    }
+    &--sub-title {
+      font-size: 1.2rem;
+      position: relative;
+      top: -9px;
+    }
+
+    &--text {
+      margin-bottom: 0.5rem;
+    }
+  }
+
+  & ul {
+    list-style-type: square;
+    padding-left: 1rem;
+  }
+}

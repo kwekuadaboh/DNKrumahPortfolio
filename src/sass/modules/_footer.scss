@@ -1,0 +1,106 @@
+.footer {
+  background: $darkBlue;
+  color: $mainWhite;
+
+  @include tab-port {
+    // padding: 1rem;
+  }
+
+  @include tab-land {
+    padding: 1rem;
+  }
+
+  &-wrapper {
+    display: flex;
+    flex-direction: column;
+
+    @include tab-port {
+      flex-direction: row;
+      align-items: center;
+    }
+  }
+
+  &-column {
+    margin: 1rem auto 0;
+    text-align: left;
+
+    @include tab-port {
+      margin: 0;
+    }
+  }
+
+  &-column--social {
+    @include tab-port {
+      margin-right: auto;
+    }
+  }
+
+  &-column--right {
+    font-size: 0.8rem;
+    padding-bottom: 1rem;
+
+    @include tab-port {
+      font-size: 1rem;
+      padding: 1rem;
+      text-align: left;
+    }
+  }
+
+  & .kae-github {
+    display: inline-block;
+    border-bottom: 1px dashed $ligthgray1;
+  }
+}
+
+.social {
+  &__btn {
+    width: 1.5rem;
+    height: 1.5rem;
+    margin-right: 1rem;
+
+    &:focus {
+      background-color: transparent;
+      outline: none;
+    }
+
+    &:hover .icon--linkedin {
+      fill: $linkedinColor;
+    }
+    &:hover .icon--facebook {
+      fill: $facebookColor;
+    }
+    &:hover .icon--whatsapp {
+      fill: $whatsappColor;
+    }
+    &:hover .icon--twitter {
+      fill: $twitterColor;
+    }
+  }
+}
+
+.svg-icon {
+  display: inline;
+  overflow: visible;
+  position: relative;
+  top: 3px;
+  color: red;
+  backface-visibility: hidden;
+
+  &--heart {
+    animation: heart-thump 1.5s linear infinite;
+  }
+}
+
+@keyframes heart-thump {
+  0%,
+  100%,
+  16%,
+  32% {
+    transform: scale3d(1, 1, 1);
+  }
+
+  24%,
+  8% {
+    transform: scale3d(1.1, 1.1, 1);
+  }
+}
