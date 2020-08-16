@@ -55,7 +55,7 @@
     transition: all 0.3s ease-out;
 
     &:focus {
-      outline: none;
+      // outline: none;
     }
 
     & span {
@@ -80,5 +80,13 @@
   100% {
     width: 13rem;
     height: 13rem;
+  }
+}
+
+.image-test {
+  & img {
+    max-width: 90%;
+    display: block;
+    margin: 0 auto;
   }
 }

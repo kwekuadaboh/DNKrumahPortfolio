@@ -147,6 +147,26 @@ h3 {
   }
 }
 
+.inner__link {
+  text-decoration: underline;
+  transition: all 250ms ease-in;
+
+  &:hover {
+    transform: translateY(-200px);
+    color: #505050;
+  }
+
+  &:focus,
+  &:active {
+    outline: 1px solid $mainBlack;
+  }
+}
+
+.ul-inner {
+  list-style-type: square;
+  padding-left: 1rem;
+}
+
 .section__intro {
   &--h2 {
     margin-bottom: 0.8rem;
@@ -179,5 +199,39 @@ h3 {
         text-decoration-color: $pureCyan;
       }
     }
+  }
+}
+
+// touchscreen display of title attribute of abbr
+@media (hover: none) and (pointer: coarse) {
+  abbr[title]:hover::after,
+  abbr[title]:focus::after {
+    content: attr(title);
+  }
+  abbr[title] {
+    position: relative;
+
+    /* ensure consistent styling across browsers */
+    text-decoration: underline dotted;
+  }
+
+  abbr[title]:hover::after,
+  abbr[title]:focus::after {
+    content: attr(title);
+
+    /* position tooltip like the native one */
+    position: absolute;
+    left: 0;
+    bottom: -30px;
+    width: auto;
+    white-space: nowrap;
+
+    /* style tooltip */
+    background-color: #1e1e1e;
+    color: #fff;
+    border-radius: 3px;
+    box-shadow: 1px 1px 5px 0 rgba(0, 0, 0, 0.4);
+    font-size: 14px;
+    padding: 3px 5px;
   }
 }

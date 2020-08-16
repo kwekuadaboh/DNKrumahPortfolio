@@ -1,5 +1,12 @@
 //MEDIA QUERRY MANAGER ---BOOTSTRAP QUERRIES///////////////////
 // landscape phones -- 567px
+@mixin phone-sm {
+  // landscape phones -- 576px up
+  @media only screen and (max-width: 20em) {
+    @content;
+  }
+}
+
 @mixin phone-land {
   // landscape phones -- 576px up
   @media only screen and (min-width: 36em) {

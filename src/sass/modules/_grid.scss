@@ -6,6 +6,10 @@
 
   // border: 1px solid red;
 
+  @include phone-sm {
+    max-width: 320px;
+  }
+
   @include phone-land {
     max-width: 540px;
   }
