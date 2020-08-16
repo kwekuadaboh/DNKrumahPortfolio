@@ -1,7 +1,6 @@
 node_modules
 webpack.dev.js
 webpack.prod.js
-
 package-lock.json
 .DS_Store
 

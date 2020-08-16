@@ -5,6 +5,9 @@
     margin-top: 0rem;
   }
 
+  // http://localhost:3007/index.html#about
+  // http://localhost:3007/index.html#about
+
   &__list {
     list-style: none;
     display: flex;
@@ -31,6 +34,16 @@
 
     &:focus {
       outline: 2px solid $mainBlack;
+    }
+
+    &.active {
+      color: $dogerBlue;
+      text-decoration: underline;
+    }
+
+    &.active#main-nav--highlight {
+      border: 1px solid #000;
+      color: $mainBlack;
     }
   }
 

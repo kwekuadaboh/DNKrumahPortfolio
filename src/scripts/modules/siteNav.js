@@ -13,3 +13,12 @@ navHighlight.addEventListener("click", function (e) {
     ripples.remove();
   }, 1000);
 });
+
+const currentLocation = location.href;
+const menuItem = document.querySelectorAll(".main-nav__link");
+
+for (let i = 0; i < menuItem.length; i++) {
+  if (menuItem[i].href === currentLocation) {
+    menuItem[i].classList.add("active");
+  }
+}
