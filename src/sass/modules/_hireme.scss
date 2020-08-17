@@ -4,6 +4,9 @@
   background-color: $mainWhite;
   width: 100%;
   box-shadow: 0 0 24px 0 rgba(0, 0, 0, 0.12);
+  box-shadow: 0 5px 10px -5px rgba(0, 0, 0, 0.8);
+
+  // box-shadow: 0 10px 10px -3px;
 
   &__row {
     display: flex;
@@ -67,5 +70,33 @@
     position: relative;
     top: 2px;
     display: inline-block;
+  }
+}
+
+.hireme {
+  &--icons {
+  }
+  &__msg {
+    // border: 1px solid cyan;
+
+    &--icons {
+      // background-color: $pureCyan;
+      margin-top: 2rem;
+      display: flex;
+      justify-content: space-between;
+      border-radius: 4px;
+      background-color: $mainWhite;
+      box-shadow: 0 5px 20px -5px;
+      // box-shadow: 0 0 2px 0 rgba($pureCyan, 0.3);
+
+      @include tab-port {
+        margin-top: 5rem;
+        justify-content: space-around;
+      }
+
+      & svg {
+        fill: $mainBlack;
+      }
+    }
   }
 }

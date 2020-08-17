@@ -1,0 +1,9 @@
+<div class="section__intro ">
+            <h2 class="section__intro--h2">Get In Touch </h2>
+            <span class="section__intro--text">Send me a message at
+              <a href="mailto:dennisankrh@gmail.com" class="mailto inner__link">
+                <strong>dennisankrh@gmail.com</strong></a>,
+              if you have any questions or you can fill out the four field form below and I'll get back to you as soon
+              as possible. Thank You!
+            </span>
+          </div>

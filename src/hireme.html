@@ -17,14 +17,15 @@
 <body>
   <div class="bg-container">
 
+    <!-- HEADER////////////////////////// -->
     <header class="header ptb-1" id="header">
       <div class="content-wrapper">
         <h2 class="header__logo" id="header__logo">
           <a href="index.html" title="Kwesi Nkrumah">
             <span>Kwesi</span>
-            <span style="font-weight: 600;">Nkrumah</span>
+            <span style="font-weight: 600;">Ampong</span>
             <br>
-            <small>&nbsp;&ndash;&nbsp;CA</small>
+            <small>&nbsp;&nbsp;MBA, BA, CA&lpar;L2&rpar;</small>
           </a>
         </h2>
         <nav class=" main-nav" id="main-nav">
@@ -37,6 +38,7 @@
             </li>
             <li class="main-nav__item main-nav__item--btn">
               <a href="hireme.html" class="main-nav__link main-nav--highlight" id="main-nav--highlight">Hire Me</a>
+              <!--  -->
             </li>
           </ul>
         </nav>
@@ -45,47 +47,78 @@
     <main class="main">
       <section class="hireme">
         <div class="wrapper">
-          <div class="section__intro ">
-            <h2 class="section__intro--h2">Get In Touch </h2>
-            <span class="section__intro--text">Send me a message at
-              <a href="mailto:dennisankrh@gmail.com" class="mailto inner__link">
-                <strong>dennisankrh@gmail.com</strong></a>,
-              if you have any questions or you can fill out the four field form below and I'll get back to you as soon
-              as possible. Thank You!
-            </span>
+          <h2 class="section__intro--h2">Say Hello. </h2>
+          <div class="row">
+            <div class="col-md-6">
+              <div class="hireme__msg mt-1">
+                <p>
+                  Feel Free to call, send a message or complete and submit the four-fields forms and I will respond as
+                  soon
+                  as posible. <br>
+                  I am always open to discussing opportunities and I look forward to being part of your great
+                  organization.
+                </p>
+
+                <!-- ICONS  -->
+                <div class="hireme__msg--icons">
+                  <a href="tel:+233248693477" class="btn btn-hireme">
+                    <svg class="icon icon--phone">
+                      <use xlink:href="./images/sprites.svg#icon-phone"></use>
+                    </svg>
+                  </a>
+                  <a href="mailto:dennisankrh@gmail.com" class="btn btn-hireme">
+                    <svg class="icon icon--mail">
+                      <use xlink:href="./images/sprites.svg#icon-mail"></use>
+                    </svg>
+                  </a>
+                  <a href="sms:+233248693477" class="btn btn-hireme      ">
+                    <svg class="icon icon--sms">
+                      <use xlink:href="./images/sprites.svg#icon-sms"></use>
+                    </svg>
+                  </a>
+
+                </div>
+              </div>
+            </div>
+
+
+            <div class="col-md-6">
+              <form class="form mt-1" method="POST" data-netlify="true" name="contact">
+
+                <div class="form__group">
+                  <label for="name">Your Name <span class="form__required">&ast;</span></label>
+                  <input type="text" id="name" name="name" class="form__control" placeholder="First and Last" required
+                    minlength="5">
+                </div>
+                <div class="form__group">
+                  <label for="email">Your Email <span class="form__required">&ast;</span></label>
+                  <input type="email" id="email" name="email" class="form__control" placeholder="someone@example.com"
+                    required>
+                </div>
+
+                <div class="form__group">
+                  <label for="subject">Subject</label>
+                  <input id="subject" type="text" class="form__control" />
+                </div>
+                <div class="form__group">
+                  <label for="message">Message <span class="form__required">&ast;</span></label>
+                  <textarea name="Message" id="message" class="form__control form__textarea"></textarea>
+                </div>
+
+                <div data-netlify-recaptcha="true" class="text-center"></div>
+
+                <div class="text-center">
+                  <button class="btn btn-submit">
+                    Send Message
+                  </button>
+                </div>
+              </form>
+            </div>
           </div>
 
-          <form class="form mt-1" method="POST" data-netlify="true" name="contact">
-            <div class="form__row">
-              <div class="col-md-6 form__group">
-                <label for="name">Your Name <span class="form__required">&ast;</span></label>
-                <input type="text" id="name" name="name" class="form__control" placeholder="First and Last" required
-                  minlength="5">
-              </div>
-              <div class="col-md-6 form__group">
-                <label for="email">Your Email <span class="form__required">&ast;</span></label>
-                <input type="email" id="email" name="email" class="form__control" placeholder="someone@example.com"
-                  required>
-              </div>
-            </div>
-            <div class="form__group">
-              <label for="subject">Subject</label>
-              <input id="subject" type="text" class="form__control" />
-            </div>
-            <div class="form__group">
-              <label for="message">Message <span class="form__required">&ast;</span></label>
-              <textarea name="Message" id="message" class="form__control form__textarea"></textarea>
-            </div>
 
-            <div data-netlify-recaptcha="true" class="text-center"></div>
 
-            <div class="text-center">
-              <button class="btn btn-submit">
-                Send Message
-              </button>
-            </div>
 
-          </form>
         </div>
       </section>
 

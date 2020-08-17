@@ -145,6 +145,16 @@ h3 {
       border-color: $dogerBlue;
     }
   }
+
+  &-hireme {
+    transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
+      border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+
+    &:hover svg,
+    &:focus svg {
+      fill: $pureCyan;
+    }
+  }
 }
 
 .inner__link {

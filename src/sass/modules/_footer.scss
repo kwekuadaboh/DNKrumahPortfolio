@@ -31,6 +31,7 @@
 
   &-column--social {
     @include tab-port {
+      display: block;
       margin-right: auto;
     }
   }
@@ -56,7 +57,8 @@
   &__btn {
     width: 1.5rem;
     height: 1.5rem;
-    margin-right: 1rem;
+    margin-right: 2rem;
+    display: inline-block;
 
     &:focus {
       background-color: transparent;
