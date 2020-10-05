@@ -1,0 +1,18 @@
+{
+  "name": "materilize-css-learn",
+  "version": "1.0.0",
+  "description": "First Steps with materializecss",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "sass-compile": "node-sass --watch sass -o css --source-map true",
+    "devserver": "live-server --port=3020",
+    "start": "npm-run-all --parallel devserver sass-compile"
+  },
+  "author": "Kae",
+  "license": "MIT",
+  "devDependencies": {
+    "npm-run-all": "^4.1.5",
+    "postcss-cli": "^7.1.1"
+  }
+}

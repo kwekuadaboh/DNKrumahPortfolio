@@ -1,0 +1,44 @@
+.header {
+  border: 1px solid red;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  & a {
+    text-decoration: none;
+    color: #000;
+    transition: all 250ms ease-in;
+
+    &:hover {
+      color: teal;
+    }
+  }
+}
+
+.main-nav {
+  &__list {
+    list-style-type: none;
+  }
+  &__item {
+    display: inline-block;
+
+    &:not(:last-of-type) {
+      margin-right: 4rem;
+    }
+  }
+  &__link {
+    text-decoration: none;
+    color: #000;
+    font-size: 1.5rem;
+    transition: all 250ms ease;
+    padding: 4px 5px;
+
+    &.active {
+      color: steelblue;
+      text-decoration: underline;
+    }
+
+    &:hover {
+      color: steelblue;
+    }
+  }
+}
